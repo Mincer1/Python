@@ -1,1 +1,1 @@
-hello = print("hello world")
+import Task_1
