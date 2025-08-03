@@ -1,3 +1,4 @@
+#2.1
 # nums_list = []
 
 # N = int(input('Кол-во чисел в списке: '))
@@ -18,7 +19,7 @@
 
 # print('Минимальное число в списке:', minimum)
 
-#2
+#2.2
 # summa_index = 0
 # num_list = []
 # count_num = int(input("Введите кол-во чисел в списке: "))
@@ -35,7 +36,7 @@
         
 # print(f"Сумма индексов {summa_index}")
 
-#3
+#2.3
 # count_dog = int(input("Сколько собак учавствуют в бегах?: "))
 # dogs = []
 # for i in range(count_dog):
@@ -54,3 +55,47 @@
 
 # dogs[max_index], dogs[min_index] = dogs[min_index], dogs[max_index]
 # print(dogs)
+
+#3.1
+# words = input("Введите список: ")
+# words_list = list(words)
+# count_simvol = 0
+
+# for i, simvol in enumerate(words_list):
+#     if simvol == ":" :
+#         words_list[i] = ";"
+#         count_simvol +=1
+
+# for i in words_list:
+#     print(i, end ="")
+# print(f"Кол-во замен: {count_simvol}")
+
+#3.2
+# text_list = list(input("Введите текст: "))
+# num_str = int(input("Введите номер строки: "))
+
+# print(f"Слева символ {text_list[num_str - 2]}\nCправа смивол: {text_list[num_str]}")
+
+# if text_list.count(text_list[num_str-1]) > 1:
+#     print("Есть как минимму еще один такой же символ")
+# else:
+#     print("Таких же символов больше нет")
+
+#3.3
+# words_list = []
+# count_list = [0,0,0]
+# for i in range (3):
+#     words_list.append(input(f"Введите {i+1} слово: "))
+    
+# text = input("Введите слово из текста: ")
+# while text != "конец":
+#     for i, sym in enumerate(words_list):
+#         if text == sym:
+#             count_list[i] += 1
+    
+#     text = input("Введите слово из текста: ")
+    
+# print(f"Подсчет слов в тексе:\n")
+
+# for i, words in enumerate(words_list):
+#     print(f"{words}: {count_list[i]}")
